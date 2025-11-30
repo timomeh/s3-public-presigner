@@ -1,4 +1,12 @@
-import { afterEach, beforeEach, describe, expect, mock, spyOn, test } from 'bun:test'
+import {
+  afterEach,
+  beforeEach,
+  describe,
+  expect,
+  mock,
+  spyOn,
+  test,
+} from 'bun:test'
 import { s3 } from 'bun'
 import { handleRequest } from '../src/handler'
 
@@ -20,7 +28,9 @@ describe('handleRequest', () => {
   test('redirects to the presigned key url', async () => {
     const res = await handleRequest(foundReq)
     expect(res.status).toBe(302)
-    expect(res.headers.get('Location')).toBe('https://s3-endpoint/mocked-does-exist?mocked-presign')
+    expect(res.headers.get('Location')).toBe(
+      'https://s3-endpoint/mocked-does-exist?mocked-presign'
+    )
   })
 
   describe('with nice not found handling', () => {
