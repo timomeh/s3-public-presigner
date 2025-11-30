@@ -4,7 +4,7 @@ A small service that redirects public URLs to presigned S3 URLs. The public path
 
 Deploy it on Railway to make private files in buckets publicly accessible.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/public-bucket-urls?referralCode=tQeXBS&utm_medium=integration&utm_source=template&utm_campaign=generic)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/public-bucket-urls?utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 ## Demo
 
